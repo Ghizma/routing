@@ -42,7 +42,7 @@ export default function FilteredNewsPage({ params }) {
     (selectedMonth &&
       !getAvailableNewsMonths(selectedYears).includes(+selectedMonth))
   ) {
-    throw new Error("Invalif filter");
+    throw new Error("Invalid filter");
   }
 
   return (
